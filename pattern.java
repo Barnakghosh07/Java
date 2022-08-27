@@ -53,23 +53,50 @@ public class basics {
     //    1234
  
     // Character Pattern 
-    int n = 10;
-    char ch = 'A';
-    for(int line=1;line<=n;line++){
-        for(int chars = 1; chars<=line; chars++){
-            System.out.print(ch);
-            ch++;
-        }
+    // int n = 10;
+    // char ch = 'A';
+    // for(int line=1;line<=n;line++){
+    //     for(int chars = 1; chars<=line; chars++){
+    //         System.out.print(ch);
+    //         ch++;
+    //     }
 
-        System.out.println();
+    //     System.out.println();
 
-    }
+    // }
    // Output
 
     //  A
     //  BC
     //  DEF
     //  GHIJ
+    int n = 3;
+ 
+    
+    for(int i=1; i<=n; i++) {
+        for(int j=1; j<=i; j++) {
+            System.out.print("*");
+        }
+
+        int spaces = (n-i);
+        for(int j=1; j<=spaces; j++) {
+            System.out.print(" ");
+        }
+
+        for(int j=1; j<=i; j++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+
+ 
+    
+
+
+
+
+
+
 
 
     }
